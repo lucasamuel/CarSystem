@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.usuario-navbar {
+  float: right;
+  margin-right: 100px;
+  margin-top: -60px;
+}
+
+.usuario-navbar img {
+  width: 40px;
+}
+
+.side-bar {
+  margin-top: -100px;
+    position: fixed;
+    width: 30vh;
+    height: 60vw;
+    background-color: #006494;
+
+}
+
+.side-bar-lista ul {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 150px;
+    line-height: 2.0;
+    margin-left: 15px;
+    list-style-type: none;
+    color: white;
+}
+
+.galeria {
+  margin-top: 80px;
+  margin-left: 500px;
+  width: 600px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.galeria img {
+  width: 80%;
+}
+
+.foto {
+  position: absolute;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+
+  25%{
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+  }
+
+  50%{
+    opacity: 0;
+  }
+}
+
+.foto:nth-child(1) {
+
+}
+
+.foto:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.foto:nth-child(3) {
+  animation-delay: 10s;
+}
+
+.opcoes-inicio {
+  text-align: center;
+  display: inline-block;
+  
+}
